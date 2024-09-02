@@ -11,7 +11,10 @@ import java.util.Collections;
 import java.util.List;
 
 @RestController
-@CrossOrigin(origins = {"http://127.0.0.1:5500", "http://localhost:5500"})
+@CrossOrigin(origins = { "http://localhost:5500", "http://127.0.0" +
+        ".1:5500", "https://bloggiator-backend-production.up.railway.app", "http://localhost:5501",
+        "http://127.0.0" +
+                ".1:5501" })
 @RequestMapping("/api/v1/images")
 public class ImageUploadController {
 

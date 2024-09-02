@@ -16,6 +16,10 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@CrossOrigin(origins = { "http://localhost:5500", "http://127.0.0" +
+        ".1:5500", "https://bloggiator-backend-production.up.railway.app", "http://localhost:5501",
+        "http://127.0.0" +
+                ".1:5501" })
 @RequestMapping("/comments")
 public class CommentController {
 
